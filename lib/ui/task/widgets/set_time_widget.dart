@@ -6,7 +6,6 @@ import 'package:time_managment/core/constant/constant.dart';
 import 'package:time_managment/core/providers/all_providers.dart';
 import 'package:time_managment/features/theme_data/theme_data.dart';
 
-
 class SetTimeWidget extends ConsumerWidget {
   const SetTimeWidget({super.key});
   @override

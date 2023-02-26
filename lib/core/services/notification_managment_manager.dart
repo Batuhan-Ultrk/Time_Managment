@@ -5,7 +5,6 @@ import 'package:time_managment/core/providers/all_providers.dart';
 
 class NotificationManagmentManager {
   static void notificationAdd(WidgetRef ref, BuildContext context, int id) {
-    print(id);
     LocalNotification().showNotification(
       ref.read(taskDateProvider),
       ref.read(taskTimeProvider),

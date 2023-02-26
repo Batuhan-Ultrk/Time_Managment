@@ -1,8 +1,9 @@
 // ignore_for_file: unused_result
+import 'package:day_night_time_picker/day_night_time_picker.dart';
 import 'package:flutter/material.dart';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:time_managment/core/providers/all_providers.dart';
-
 
 class ConstantsAppbar {
   static Widget appBarTitleText() {
@@ -34,7 +35,8 @@ class ConstantProviderRefresh {
 class ConstantsTask {
   static const taskAddNote = "Click to add note";
   static const taskAddTime = "Click to add note";
-  static final TimeOfDay time = TimeOfDay.now().replacing(hour: 00, minute: 00);
+  static final Time time = Time(
+      hour: 0, minute: 0); //TimeOfDay.now().replacing(hour: 00, minute: 00);
   static const message = " It's time for the task dated :)";
   static const outdatedMessage = " you have an overdue task :( ";
 }

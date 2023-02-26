@@ -19,7 +19,7 @@ class LocalNotification {
 
   Future showNotification(
       DateTime date, TimeOfDay time, context, String header, int id) async {
-    var androidDetails = AndroidNotificationDetails(
+    var androidDetails = const AndroidNotificationDetails(
       "Task Id",
       "Time",
       channelDescription: "Is My Task",
